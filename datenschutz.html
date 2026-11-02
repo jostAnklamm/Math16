@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Datenschutzerklärung für die App Math16 und die Math16-Webseite auf GitHub Pages.">
+<title>Datenschutz · Math16</title>
+<style>
+    :root { color-scheme: light; --green: #245b40; --ink: #20372b; --muted: #59685e; --line: #dce6de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f8f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    .wrap { width: min(100% - 48px, 920px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .brand { display: flex; align-items: center; gap: 14px; padding-block: 25px; }
+    .icon-wrap { position: relative; flex: 0 0 64px; width: 64px; height: 64px; }
+    .mark { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; background: var(--green); color: white; font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+    .app-icon { position: absolute; inset: 0; width: 64px; height: 64px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 10px rgb(0 0 0 / 20%); }
+    .brand-name { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+    .brand-note { color: var(--muted); font-size: 14px; }
+    main { padding-block: 54px 64px; }
+    .eyebrow { margin: 0 0 8px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { max-width: 720px; font-size: clamp(36px, 6vw, 48px); line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 20px; }
+    .intro { max-width: 650px; margin: 0 0 28px; color: var(--muted); font-size: 19px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 36px; }
+    .button { display: inline-block; padding: 10px 20px; background: var(--green); color: white; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #19482f; }
+    .card { max-width: 720px; padding: 36px 40px; background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 30px #20372b05; }
+    section + section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h2 { font-size: 19px; color: var(--green); line-height: 1.3; margin: 0 0 13px; }
+    p { margin: 0; }
+    p + p { margin-top: 12px; }
+    ol { margin: 0; padding-left: 24px; }
+    li + li { margin-top: 9px; }
+    .features { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .features span { background: #edf4ee; color: var(--green); padding: 5px 11px; border-radius: 7px; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    XXXnav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    a { color: var(--green); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #bc9636; outline-offset: 5px; }
+    @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } main { padding-block: 36px 44px; } .card { padding: 26px 22px; border-radius: 14px; } .intro { font-size: 17px; } }
+  
+    address { font-style: normal; margin-bottom: 14px; }
+    .placeholder { background: #fff5d7; color: #614909; padding: 1px 4px; border-radius: 4px; }
+    .draft-note { max-width: 720px; margin-top: 22px; padding: 16px 20px; border-left: 3px solid #d2ad46; background: #fff9e9; color: #655525; font-size: 14px; }
+    ul { padding-left: 24px; }
+    @media print { .draft-note { display: none; } }
+</style>
+</head>
+<body>
+<header>
+    <div class="wrap brand">
+      <div class="icon-wrap">
+        <span class="mark" aria-hidden="true">M16</span>
+        <!-- Dein App-Icon unter dem Namen math16-icon.png im selben Ordner ablegen.
+             Ohne Bilddatei wird stattdessen das M16-Zeichen angezeigt. -->
+        <img class="app-icon" src="math16-icon.png" alt="" width="64" height="64" onerror="this.hidden=true">
+      </div>
+      <div><div class="brand-name">Math16</div><div class="brand-note">Das Zahlenrätsel</div></div>
+    </div>
+  </header>
+<main class="wrap" id="datenschutz">
+    <p class="eyebrow">App &amp; Webseite</p>
+    <h1>Datenschutzerklärung</h1>
+    <p class="intro">Informationen zum Datenschutz bei Math16 und auf dieser Webseite.<br><small>Stand: 2. November 2026</small></p>
+    <div class="card">
+      <section aria-labelledby="kurz">
+        <h2 id="kurz">Das Wichtigste auf einen Blick</h2>
+        <p>Math16 speichert Spielstände, Einstellungen und Spielstatistiken lokal auf deinem Gerät. Die App verwendet keine eingebundenen Werbe-, Tracking- oder Analysewerkzeuge von Drittanbietern und übermittelt diese Spieldaten nicht an mich.</p>
+        <p>Diese Webseite besteht aus statischen HTML-Seiten. Beim Aufruf verarbeitet der Hostinganbieter GitHub technische Verbindungsdaten. Wenn du mir eine E-Mail schreibst, verarbeite ich die darin enthaltenen Daten zur Bearbeitung deiner Anfrage.</p>
+      </section>
+      <section aria-labelledby="verantwortlich">
+        <h2 id="verantwortlich">1. Verantwortlicher und Kontakt</h2>
+        <address>Jost Anklamm<br>
+          <span class="placeholder">[Straße und Hausnummer]</span><br>
+          <span class="placeholder">[Postleitzahl und Ort]</span><br>Deutschland
+        </address>
+        <p>E-Mail: <a href="mailto:jost.anklamm@web.de">jost.anklamm@web.de</a></p>
+        <p>Weitere Anbieterinformationen findest du im <a href="impressum.html">Impressum</a>.</p>
+      </section>
+      <section aria-labelledby="app">
+        <h2 id="app">2. Lokale Daten in der App Math16</h2>
+        <p>Spielstände, Einstellungen und Spielstatistiken werden auf deinem Gerät gespeichert, damit du das Spiel nutzen und deinen Fortschritt fortsetzen kannst. Ich betreibe hierfür keinen Server. Math16 nutzt keine eigene iCloud-Synchronisation und richtet kein Benutzerkonto bei mir ein. Auf die lokal gespeicherten Spieldaten habe ich keinen Zugriff.</p>
+        <p>Soweit diese Daten personenbezogen sind, erfolgt die Verarbeitung zur Bereitstellung der Spielfunktionen auf Grundlage von Art. 6 Abs. 1 Buchst. b DSGVO. Die Daten verbleiben lokal, solange sie für die Nutzung gespeichert bleiben oder bis du sie löschst. Die Löschung der App allein entfernt je nach Betriebssystem nicht zwingend sämtliche zugehörigen Dateien; insbesondere auf dem Mac können gespeicherte App-Daten zurückbleiben.</p>
+        <p>Eine von dir aktivierte Gerätesicherung, etwa ein iCloud-Backup, kann auch lokale App-Daten enthalten. Solche Sicherungen richten sich nach deinen Geräte- und Sicherungseinstellungen und sind von einer Synchronisation durch Math16 zu unterscheiden. Für Sicherungskopien gelten die Bedingungen des jeweiligen Sicherungsanbieters.</p>
+      </section>
+      <section aria-labelledby="apple">
+        <h2 id="apple">3. App Store, Käufe und Apple-Diagnosedaten</h2>
+        <p>Beim Download und bei der Nutzung des App Store verarbeitet Apple Daten in eigener Verantwortung, zum Beispiel Angaben zum Apple Account, zum Gerät und zu Downloads. Maßgeblich sind die <a href="https://www.apple.com/de/legal/privacy/">Datenschutzhinweise von Apple</a> und die <a href="https://www.apple.com/legal/privacy/data/en/app-store/">Informationen zum App Store</a>.</p>
+        <p><strong>Geplante Freischaltung:</strong> Für Math16 ist eine einmalige Freischaltung der Vollversion über einen Apple-In-App-Kauf vorgesehen. Sobald diese Funktion angeboten wird, erfolgt die Zahlungsabwicklung über Apple. Vollständige Zahlungsdaten wie Kreditkartennummern erhalte ich nicht. Die App muss den Kaufstatus prüfen, um die gekauften Funktionen freizuschalten; eine Übermittlung an einen eigenen Entwickler-Server ist nicht vorgesehen. Soweit ich dabei personenbezogene Daten verarbeite, dient dies der Vertragserfüllung nach Art. 6 Abs. 1 Buchst. b DSGVO.</p>
+        <!-- Vor Aktivierung der Käufe mit der tatsächlichen StoreKit-Implementierung abgleichen und diesen Absatz aktualisieren. -->
+        <p>Abhängig von deinen Systemeinstellungen kann Apple Diagnose- und Nutzungsdaten erheben und mir zusammengefasste oder nicht persönlich identifizierende Informationen, einschließlich Absturzberichten, bereitstellen. Math16 bindet dafür kein zusätzliches Analysewerkzeug ein. Hinweise und Wahlmöglichkeiten beschreibt Apple unter <a href="https://www.apple.com/uk/legal/privacy/data/en/app-analytics/">App Analytics &amp; Privacy</a>. Auf iPadOS kannst du die Freigabe für App-Entwickler unter „Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen“ verwalten.</p>
+      </section>
+      <section aria-labelledby="hosting">
+        <h2 id="hosting">4. Bereitstellung der Webseite über GitHub Pages</h2>
+        <p>Diese Webseite wird über GitHub Pages bereitgestellt. GitHub nennt als verantwortliche Unternehmen GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande, und GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA.</p>
+        <p>Beim Seitenaufruf erhält GitHub die für die Auslieferung erforderlichen technischen Daten. GitHub erklärt ausdrücklich, dass die IP-Adresse von Besuchern für Sicherheitszwecke protokolliert und gespeichert wird. Je nach Anfrage fallen außerdem technische Angaben wie Zeitpunkt, angeforderte Seite und Browserinformationen an.</p>
+        <p>Die Einbindung des Hostingdienstes dient der zuverlässigen Bereitstellung und Sicherheit dieser Webseite. Rechtsgrundlage hierfür ist mein berechtigtes Interesse nach Art. 6 Abs. 1 Buchst. f DSGVO. Ohne Übermittlung der erforderlichen Verbindungsdaten kann die Seite nicht ausgeliefert werden.</p>
+        <p>GitHub verarbeitet Daten auch in den USA und weiteren Ländern. GitHub erläutert hierfür insbesondere EU-Standardvertragsklauseln und die Teilnahme am EU-US Data Privacy Framework. Details zu Empfängern, Übermittlungsgarantien und Speicherkriterien findest du in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Eine konkrete Aufbewahrungsfrist für IP-Protokolle von Pages-Besuchern wird in den hier zugrunde gelegten Pages-Hinweisen nicht genannt; ich lege diese Frist nicht selbst fest.</p>
+      </section>
+      <section aria-labelledby="cookies">
+        <h2 id="cookies">5. Cookies, Tracking und externe Inhalte</h2>
+        <p>Der von mir bereitgestellte HTML-Code setzt keine Cookies, nutzt keinen Local Storage und enthält keine Besucheranalyse oder Werbetracker. Schriftarten werden aus dem System des Geräts verwendet; Bilder werden zusammen mit der Webseite geladen. Externe Schriftarten, Videos, Karten und Social-Media-Plugins sind nicht eingebunden.</p>
+        <p>Normale Links zu anderen Webseiten stellen erst beim Aufruf eine Verbindung zum jeweiligen Ziel her. Dort gelten die Datenschutzhinweise des jeweiligen Anbieters.</p>
+      </section>
+      <section aria-labelledby="mail">
+        <h2 id="mail">6. Kontakt per E-Mail</h2>
+        <p>Wenn du mich per E-Mail kontaktierst, verarbeite ich deine E-Mail-Adresse, die Inhalte deiner Nachricht und gegebenenfalls weitere von dir übermittelte Angaben oder Anhänge. Zweck ist die Bearbeitung deiner Anfrage. Der E-Mail-Link öffnet lediglich dein E-Mail-Programm; die Webseite selbst enthält kein Kontaktformular.</p>
+        <p>Für Anfragen zur Nutzung der App oder einem Vertrag gilt Art. 6 Abs. 1 Buchst. b DSGVO. Sonstige Anfragen bearbeite ich auf Grundlage meines berechtigten Interesses an der Kommunikation nach Art. 6 Abs. 1 Buchst. f DSGVO.</p>
+        <p>Die Nachrichten werden über meinen E-Mail-Anbieter WEB.DE (1&amp;1 Mail &amp; Media GmbH) empfangen und gespeichert. Informationen dazu findest du in den <a href="https://agb-server.web.de/datenschutz">Datenschutzhinweisen von WEB.DE</a>. Übermittelte Daten können außerdem durch die an der E-Mail-Zustellung beteiligten Dienstleister verarbeitet werden.</p>
+        <p>Ich lösche Anfragen, sobald die Bearbeitung abgeschlossen ist und keine weitere Aufbewahrung für Rückfragen, gesetzliche Pflichten oder die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist. Soweit gesetzliche Aufbewahrungspflichten bestehen, erfolgt die weitere Speicherung nach Art. 6 Abs. 1 Buchst. c DSGVO; für erforderliche Rechtsverteidigung nach Art. 6 Abs. 1 Buchst. f DSGVO.</p>
+        <p>Die Kontaktaufnahme ist freiwillig. Ohne eine Rückantwortadresse und die für die Bearbeitung notwendigen Informationen kann ich deine Anfrage gegebenenfalls nicht beantworten.</p>
+      </section>
+      <section aria-labelledby="rechte">
+        <h2 id="rechte">7. Deine Datenschutzrechte</h2>
+        <p>Soweit die jeweiligen gesetzlichen Voraussetzungen erfüllt sind, hast du folgende Rechte:</p>
+        <ul>
+          <li>Auskunft über deine personenbezogenen Daten (Art. 15 DSGVO),</li>
+          <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO),</li>
+          <li>Löschung und Einschränkung der Verarbeitung (Art. 17 und 18 DSGVO),</li>
+          <li>Datenübertragbarkeit (Art. 20 DSGVO),</li>
+          <li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO).</li>
+        </ul>
+        <p>Du kannst dich dafür an die oben genannte E-Mail-Adresse wenden. Für Verarbeitungen, die Apple oder GitHub in eigener Verantwortung durchführen, kannst du deine Rechte auch direkt gegenüber diesen Anbietern ausüben.</p>
+        <p>Du hast außerdem das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren, insbesondere in dem Mitgliedstaat deines gewöhnlichen Aufenthaltsorts, deines Arbeitsplatzes oder des Orts des vermuteten Verstoßes (Art. 77 DSGVO).</p>
+      </section>
+      <section aria-labelledby="widerspruch">
+        <h2 id="widerspruch">8. Widerspruchsrecht</h2>
+        <p><strong>Wenn eine Verarbeitung auf Art. 6 Abs. 1 Buchst. f DSGVO beruht, kannst du aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit Widerspruch nach Art. 21 DSGVO einlegen.</strong></p>
+        <p>Ich verarbeite die betreffenden personenbezogenen Daten dann nicht weiter, es sei denn, ich kann zwingende schutzwürdige Gründe nachweisen, die deine Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+      </section>
+      <section aria-labelledby="entscheidungen">
+        <h2 id="entscheidungen">9. Automatisierte Entscheidungen</h2>
+        <p>Ich setze keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO ein.</p>
+      </section>
+      <section aria-labelledby="aenderungen">
+        <h2 id="aenderungen">10. Änderungen dieser Erklärung</h2>
+        <p>Diese Erklärung wird angepasst, wenn sich Funktionen oder Datenverarbeitungen ändern, beispielsweise durch zusätzliche Onlinedienste oder Analysewerkzeuge. Die jeweils aktuelle Fassung findest du auf dieser Seite.</p>
+      </section>
+    </div>
+    <!-- Nach Ergänzung der Anschrift diesen Entwurfshinweis entfernen. -->
+    <aside class="draft-note"><strong>Entwurf:</strong> Bitte vor Veröffentlichung die gelb markierte Postanschrift ergänzen. Den Abschnitt zur geplanten Freischaltung bei Einführung des In-App-Kaufs an die tatsächliche Umsetzung anpassen und diesen Entwurfshinweis entfernen.</aside>
+</main>
+<footer>
+    <div class="wrap">
+      <span>Math16 · Jost Anklamm</span>
+      <nav aria-label="Weitere Informationen">
+        <a href="index.html">Math16</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="datenschutz.html" aria-current="page">Datenschutz</a> ·
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

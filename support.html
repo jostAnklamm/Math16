@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hilfe und Support für Math16: häufige Fragen, Tipps zum Spielen und Kontakt zum Entwickler.">
+<title>Support · Math16</title>
+<style>
+    :root { color-scheme: light; --green: #245b40; --ink: #20372b; --muted: #59685e; --line: #dce6de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f8f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    .wrap { width: min(100% - 48px, 920px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .brand { display: flex; align-items: center; gap: 14px; padding-block: 25px; }
+    .icon-wrap { position: relative; flex: 0 0 64px; width: 64px; height: 64px; }
+    .mark { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; background: var(--green); color: white; font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+    .app-icon { position: absolute; inset: 0; width: 64px; height: 64px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 10px rgb(0 0 0 / 20%); }
+    .brand-name { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+    .brand-note { color: var(--muted); font-size: 14px; }
+    main { padding-block: 54px 64px; }
+    .eyebrow { margin: 0 0 8px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { max-width: 720px; font-size: clamp(36px, 6vw, 48px); line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 20px; }
+    .intro { max-width: 650px; margin: 0 0 28px; color: var(--muted); font-size: 19px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 36px; }
+    .button { display: inline-block; padding: 10px 20px; background: var(--green); color: white; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #19482f; }
+    .card { max-width: 720px; padding: 36px 40px; background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 30px #20372b05; }
+    section + section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h2 { font-size: 19px; color: var(--green); line-height: 1.3; margin: 0 0 13px; }
+    p { margin: 0; }
+    p + p { margin-top: 12px; }
+    ol { margin: 0; padding-left: 24px; }
+    li + li { margin-top: 9px; }
+    .features { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .features span { background: #edf4ee; color: var(--green); padding: 5px 11px; border-radius: 7px; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    XXXnav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    a { color: var(--green); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #bc9636; outline-offset: 5px; }
+    @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } main { padding-block: 36px 44px; } .card { padding: 26px 22px; border-radius: 14px; } .intro { font-size: 17px; } }
+  
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { padding: 16px 0; cursor: pointer; font-weight: 600; line-height: 1.5; }
+    summary::marker { color: var(--green); }
+    summary:focus-visible { outline: 3px solid #bc9636; outline-offset: 3px; }
+    .answer { padding: 0 0 20px; color: var(--muted); }
+    ol, ul { padding-left: 24px; }
+    .signature { color: var(--muted); font-size: 14px; }
+    @media print { details > .answer { display: block; } }
+</style>
+</head>
+<body>
+<header>
+    <div class="wrap brand">
+      <div class="icon-wrap">
+        <span class="mark" aria-hidden="true">M16</span>
+        <!-- Dein App-Icon unter dem Namen math16-icon.png im selben Ordner ablegen.
+             Ohne Bilddatei wird stattdessen das M16-Zeichen angezeigt. -->
+        <img class="app-icon" src="math16-icon.png" alt="" width="64" height="64" onerror="this.hidden=true">
+      </div>
+      <div><div class="brand-name">Math16</div><div class="brand-note">Das Zahlenrätsel</div></div>
+    </div>
+  </header>
+<main class="wrap">
+<p class="eyebrow">Hilfe &amp; Kontakt</p>
+<h1>Support für Math16</h1>
+<p class="intro">Eine Frage zum Spiel oder ein technisches Problem? Hier findest du erste Hilfe und den direkten Kontakt zum Entwickler.</p>
+<div class="actions"><a class="button" href="mailto:jost.anklamm@web.de?subject=Math16%20Support">E-Mail an den Support</a><a href="#hilfe">Häufige Fragen</a></div>
+<div class="card">
+<section aria-labelledby="start">
+<h2 id="start">So startest du</h2>
+<p>In Math16 kombinierst du die Zahlen von 1 bis 16 mit den mathematischen Hinweisen auf dem Spielfeld. Differenzen, Verhältnisse, Summen und Produkte helfen dir dabei, passende Zahlen zu finden und Möglichkeiten auszuschließen.</p>
+<ol>
+<li><strong>Eine Zelle auswählen:</strong> Wähle die Zelle, die du bearbeiten möchtest, und gib eine Zahl über das Zahlenfeld ein.</li>
+<li><strong>Hinweise vergleichen:</strong> Beziehe die mathematischen Beziehungen zu benachbarten Zellen und zu Zellgruppen in deine Überlegungen ein.</li>
+<li><strong>Möglichkeiten notieren:</strong> Nutze den Notizmodus, wenn mehrere Zahlen infrage kommen.</li>
+</ol>
+</section>
+<section id="hilfe" aria-labelledby="fragen">
+<h2 id="fragen">Häufige Fragen</h2>
+<details><summary>Was bedeuten die mathematischen Hinweise?</summary><div class="answer"><p>Eine Differenz beschreibt den Unterschied zweier Zahlen, ein Verhältnis ihre Beziehung durch Division und ein Produkt ihr Multiplikationsergebnis. Summenhinweise beziehen sich auf die durch eine Klammer gekennzeichnete Zellgruppe.</p><p>Achte bei Differenzen und Verhältnissen auf die angezeigte Richtung beziehungsweise Reihenfolge. Ein Verhältnis von 3 ist beispielsweise etwas anderes als 1/3.</p></div></details>
+<details><summary>Wozu dient der Notizmodus?</summary><div class="answer"><p>Im Notizmodus kannst du mögliche Zahlen in einer Zelle festhalten. So behältst du mehrere Möglichkeiten im Blick, bevor du dich auf eine Zahl festlegst. Schalte den Notizmodus wieder aus, wenn du einen endgültigen Wert eingeben möchtest.</p></div></details>
+<details><summary>Was hilft, wenn ich nicht weiterkomme?</summary><div class="answer"><p>Suche nach Zellen mit wenigen möglichen Werten. Vergleiche mehrere Hinweise, die dieselbe Zelle betreffen, und überprüfe auch bereits eingetragene Zahlen. Notizen helfen dabei, Möglichkeiten systematisch einzugrenzen.</p></div></details>
+<details><summary>Kann ich das Spielfeld vergrößern?</summary><div class="answer"><p>Math16 bietet einen Zoom für den Spielfeldbereich. Nutze dafür die Zoom-Bedienung deiner App-Version, um Zahlen und Hinweise besser zu erkennen.</p></div></details>
+<details><summary>Wo werden meine Spieldaten gespeichert?</summary><div class="answer"><p>Spielstände, Einstellungen und Spielstatistiken werden lokal auf deinem Gerät gespeichert. Math16 bietet derzeit keine eigene iCloud-Synchronisation. Weitere Informationen findest du in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p></div></details>
+<details><summary>Was kann ich bei einem technischen Problem tun?</summary><div class="answer"><p>Schließe Math16 und öffne die App erneut. Prüfe, ob eine neuere App-Version verfügbar ist. Falls das Problem bestehen bleibt, beschreibe mir per E-Mail, was passiert und wie sich der Fehler auslösen lässt.</p><p>Bitte lösche die App zur Fehlerbehebung nicht vorschnell: Dabei können lokal gespeicherte Spielstände verloren gehen.</p></div></details>
+</section>
+<section aria-labelledby="fehler">
+<h2 id="fehler">Einen Fehler melden</h2>
+<p>Mit diesen Angaben kann ich dein Problem besser nachvollziehen:</p>
+<ul>
+<li>Gerät, zum Beispiel iPad oder Mac, möglichst mit Modellangabe</li>
+<li>Version von iPadOS beziehungsweise macOS</li>
+<li>Math16-App-Version</li>
+<li>Schritte, nach denen das Problem auftritt</li>
+<li>Was du erwartet hast und was stattdessen passiert</li>
+<li>Falls hilfreich: Screenshot des Spielfelds oder der Fehlermeldung</li>
+</ul>
+<p>Bitte prüfe Screenshots vor dem Versand und entferne persönliche Informationen, die für die Fehlerbeschreibung nicht benötigt werden.</p>
+<p><a class="button" href="mailto:jost.anklamm@web.de?subject=Math16%20Fehlermeldung">Fehler per E-Mail melden</a></p>
+</section>
+<section aria-labelledby="kontakt">
+<h2 id="kontakt">Fragen, Ideen oder Anregungen?</h2>
+<p>Auch Rückmeldungen zur Bedienung und Vorschläge für Math16 sind willkommen. Schreib mir an <a href="mailto:jost.anklamm@web.de?subject=Math16%20Feedback">jost.anklamm@web.de</a>.</p>
+<p>Deine Nachricht wird zur Bearbeitung deiner Anfrage verwendet. Informationen dazu findest du im Abschnitt zur E-Mail-Kontaktaufnahme in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+<p class="signature">Jost Anklamm · Entwickler von Math16</p>
+</section>
+</div>
+</main>
+<footer>
+    <div class="wrap">
+      <span>Math16 · Jost Anklamm</span>
+      <nav aria-label="Weitere Informationen">
+        <a href="index.html">Math16</a> ·
+        <a href="support.html" aria-current="page">Support</a> ·
+        <a href="datenschutz.html">Datenschutz</a> ·
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

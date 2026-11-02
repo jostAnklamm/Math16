@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Impressum und Anbieterinformationen zur App Math16.">
+  <title>Impressum · Math16</title>
+  <style>
+    :root { color-scheme: light; --green: #245b40; --ink: #20372b; --muted: #59685e; --line: #dce6de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f8f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    .wrap { width: min(100% - 48px, 920px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .brand { display: flex; align-items: center; gap: 14px; padding-block: 25px; }
+    .icon-wrap { position: relative; flex: 0 0 64px; width: 64px; height: 64px; }
+    .mark { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; background: var(--green); color: white; font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+    .app-icon { position: absolute; inset: 0; width: 64px; height: 64px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 10px rgb(0 0 0 / 20%); }
+
+    .brand-name { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+    .brand-note { color: var(--muted); font-size: 14px; }
+    main { padding-block: 54px 64px; }
+    .eyebrow { margin: 0 0 8px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { font-size: clamp(36px, 6vw, 48px); line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 14px; }
+    .intro { margin: 0 0 32px; color: var(--muted); }
+    .card { max-width: 720px; padding: 36px 40px; background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 30px #20372b05; }
+    section + section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h2 { font-size: 19px; color: var(--green); line-height: 1.3; margin: 0 0 13px; }
+    p { margin: 0; }
+    address { font-style: normal; }
+    .name { font-weight: 650; }
+    .description { color: var(--muted); margin-bottom: 14px; }
+    .placeholder { background: #fff5d7; color: #614909; border-radius: 4px; padding: 1px 4px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+    .note { max-width: 720px; margin-top: 22px; padding: 16px 20px; border-left: 3px solid #d2ad46; background: #fff9e9; color: #655525; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    a { color: var(--green); text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #bc9636; outline-offset: 5px; }
+    @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } main { padding-block: 36px 44px; } .card { padding: 26px 22px; border-radius: 14px; } }
+    @media print { body { background: white; } .card { border: none; padding: 0; box-shadow: none; } .draft-note { display: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+        <div class="icon-wrap">
+          <span class="mark" aria-hidden="true">M16</span>
+          <!-- Dein App-Icon unter dem Namen math16-icon.png im selben Ordner ablegen.
+               Ohne Bilddatei wird stattdessen das M16-Zeichen angezeigt. -->
+          <img class="app-icon" src="math16-icon.png" alt="" width="64" height="64" onerror="this.hidden=true">
+        </div>
+      <div><div class="brand-name">Math16</div><div class="brand-note">Das Zahlenrätsel</div></div>
+    </div>
+  </header>
+  <main class="wrap" id="impressum">
+    <p class="eyebrow">Anbieterinformationen</p>
+    <h1>Impressum</h1>
+    <p class="intro">Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)</p>
+    <div class="card">
+      <section aria-labelledby="anbieter">
+        <h2 id="anbieter">Anbieter</h2>
+        <p class="name">Jost Anklamm</p>
+        <p class="description">Entwicklung und Anbieter der App Math16</p>
+        <!-- Vor Veröffentlichung durch die vollständige, ladungsfähige Anschrift ersetzen. -->
+        <address>
+          <p class="street">Rue Montesquieu 13</p>
+          <p class="city">13469 Berlin</p>
+          <p class="country">Deutschland</p>
+        </address>
+      </section>
+      <section aria-labelledby="kontakt">
+        <h2 id="kontakt">Kontakt</h2>
+        <!-- Echte Kontaktdaten eintragen. E-Mail anschließend z. B. mit mailto: verlinken. -->
+        <p>E-Mail: <a href="mailto:jost.anklamm@web.de">jost.anklamm@web.de</a><br>
+        Telefon: +49 (0) 176 8077 2599</p>
+      </section>
+      <!-- Diesen gesamten Abschnitt entfernen, wenn keine entsprechende Nummer vorhanden ist.
+           Andernfalls die zutreffende Nummer mit ihrer korrekten Bezeichnung eintragen. -->
+      <section aria-labelledby="steuer">
+        <h2 id="steuer">Steuerliche Angaben</h2>
+        <p><span class="placeholder">[Falls vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG oder Wirtschafts-Identifikationsnummer gemäß § 139c AO eintragen.]</span></p>
+      </section>
+    </div>
+    <!-- Diesen Entwurfshinweis vor Veröffentlichung entfernen. -->
+    <aside class="note draft-note" aria-label="Hinweis zum Entwurf">
+      <strong>Entwurf:</strong> Bitte vor Veröffentlichung alle gelb markierten Platzhalter ersetzen oder nicht zutreffende Abschnitte entfernen. Anschließend auch diesen Hinweis entfernen.
+    </aside>
+  </main>
+  <footer>
+    <div class="wrap">
+        <span>Math16 · Jost Anklamm</span>
+        <nav aria-label="Weitere Informationen">
+            <a href="index.html">Math16</a> ·
+            <a href="support.html">Support</a> ·
+            <a href="datenschutz.html">Datenschutz</a> ·
+            <a href="impressum.html" aria-current="page">Impressum</a>
+        </nav>
+    </div>
+    <!-- Bei Einbindung in die vollständige Webseite hier echte Links zu Startseite,
+         Support und Datenschutzerklärung ergänzen; Impressum auf jeder Seite verlinken. -->
+    
+  </footer>
+</body>
+</html>
