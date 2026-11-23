@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Legal notice and provider information for the Math16 app.">
+  <title>Legal Notice · Math16</title>
+  <style>
+    :root { color-scheme: light; --green: #245b40; --ink: #20372b; --muted: #59685e; --line: #dce6de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f8f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    .wrap { width: min(100% - 48px, 920px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .brand { display: flex; align-items: center; gap: 14px; padding-block: 25px; }
+    .icon-wrap { position: relative; flex: 0 0 64px; width: 64px; height: 64px; }
+    .mark { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; background: var(--green); color: white; font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+    .app-icon { position: absolute; inset: 0; width: 64px; height: 64px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 10px rgb(0 0 0 / 20%); }
+    .brand-name { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+    .brand-note { color: var(--muted); font-size: 14px; }
+    main { padding-block: 54px 64px; }
+    .eyebrow { margin: 0 0 8px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { font-size: clamp(36px, 6vw, 48px); line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 14px; }
+    .intro { margin: 0 0 32px; color: var(--muted); }
+    .card { max-width: 720px; padding: 36px 40px; background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 30px #20372b05; }
+    section + section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h2 { font-size: 19px; color: var(--green); line-height: 1.3; margin: 0 0 13px; }
+    p { margin: 0; }
+    address { font-style: normal; }
+    .name { font-weight: 650; }
+    .description { color: var(--muted); margin-bottom: 14px; }
+    .placeholder { background: #fff5d7; color: #614909; border-radius: 4px; padding: 1px 4px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+    .note { max-width: 720px; margin-top: 22px; padding: 16px 20px; border-left: 3px solid #d2ad46; background: #fff9e9; color: #655525; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    a { color: var(--green); text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #bc9636; outline-offset: 5px; }
+    @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } main { padding-block: 36px 44px; } .card { padding: 26px 22px; border-radius: 14px; } }
+    @media print { body { background: white; } .card { border: none; padding: 0; box-shadow: none; } .draft-note { display: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <div class="icon-wrap">
+        <span class="mark" aria-hidden="true">M16</span>
+        <!-- Place your app icon at ../images/math16-icon.png. If unavailable, the M16 symbol is shown instead. -->
+        <img class="app-icon" src="../images/math16-icon.png" alt="" width="64" height="64" onerror="this.hidden=true">
+      </div>
+      <div><div class="brand-name">Math16</div><div class="brand-note">The Number Puzzle</div></div>
+    </div>
+  </header>
+  <main class="wrap" id="legal-notice">
+    <p class="eyebrow">Provider Information</p>
+    <h1>Legal Notice</h1>
+    <p class="intro">Information pursuant to Section 5 of the German Digital Services Act (DDG)</p>
+    <div class="card">
+      <section aria-labelledby="provider">
+        <h2 id="provider">Provider</h2>
+        <p class="name">Jost Anklamm</p>
+        <p class="description">Developer and provider of the Math16 app</p>
+        <!-- Before publication, ensure that the full address for service is provided. -->
+        <address>
+          <p class="street">Rue Montesquieu 13</p>
+          <p class="city">13469 Berlin</p>
+          <p class="country">Germany</p>
+        </address>
+      </section>
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <!-- Enter valid contact details. -->
+        <p>Email: <a href="mailto:info.anklamm@web.de">info.anklamm@web.de</a><br>
+        Phone: +49 (0) 176 8077 2599</p>
+      </section>
+      <!-- Remove this entire section if neither identification number is available.
+           Otherwise, enter the applicable number with its correct designation. -->
+      <section aria-labelledby="tax">
+        <h2 id="tax">Tax Information</h2>
+        <p><span class="placeholder">[If applicable: Enter the VAT identification number pursuant to Section 27a of the German VAT Act (UStG), or the business identification number pursuant to Section 139c of the German Fiscal Code (AO).]</span></p>
+      </section>
+    </div>
+    <!-- Remove this draft notice before publication. -->
+    <aside class="note draft-note" aria-label="Draft notice">
+      <strong>Draft:</strong> Before publication, replace all yellow-highlighted placeholders or remove sections that do not apply. Then remove this notice as well.
+    </aside>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>Math16 · © 2026 Jost Anklamm</span>
+      <nav aria-label="More Information">
+        <a href="index.html">Math16</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="legal.html" aria-current="page">Legal Notice</a>
+      </nav>
+    </div>
+    <!-- When integrating into the full website, keep links to the home page,
+         support page, and privacy policy; link to this legal notice from every page. -->
+  </footer>
+</body>
+</html>

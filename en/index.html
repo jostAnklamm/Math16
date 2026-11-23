@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Math16 – the number puzzle for iPad and Mac. Combine numbers and mathematical clues to solve the board step by step.">
+  <title>Math16 · The Number Puzzle</title>
+  <style>
+    :root { color-scheme: light; --green: #245b40; --ink: #20372b; --muted: #59685e; --line: #dce6de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f8f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    .wrap { width: min(100% - 48px, 920px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .brand { display: flex; align-items: center; gap: 14px; padding-block: 25px; }
+    .icon-wrap { position: relative; flex: 0 0 64px; width: 64px; height: 64px; }
+    .mark { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; background: var(--green); color: white; font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+    .app-icon { position: absolute; inset: 0; width: 64px; height: 64px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 10px rgb(0 0 0 / 20%); }
+    .brand-name { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+    .brand-note { color: var(--muted); font-size: 14px; }
+    main { padding-block: 54px 64px; }
+    .eyebrow { margin: 0 0 8px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { max-width: 720px; font-size: clamp(36px, 6vw, 48px); line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 20px; }
+    .intro { max-width: 650px; margin: 0 0 28px; color: var(--muted); font-size: 19px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 36px; }
+    .button { display: inline-block; padding: 10px 20px; background: var(--green); color: white; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #19482f; }
+    .card { max-width: 720px; padding: 36px 40px; background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 30px #20372b05; }
+    section + section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h2 { font-size: 19px; color: var(--green); line-height: 1.3; margin: 0 0 13px; }
+    p { margin: 0; }
+    p + p { margin-top: 12px; }
+    ol { margin: 0; padding-left: 24px; }
+    li + li { margin-top: 9px; }
+    .features { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .features span { background: #edf4ee; color: var(--green); padding: 5px 11px; border-radius: 7px; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    XXXnav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    a { color: var(--green); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #bc9636; outline-offset: 5px; }
+    @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } main { padding-block: 36px 44px; } .card { padding: 26px 22px; border-radius: 14px; } .intro { font-size: 17px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <div class="icon-wrap">
+        <span class="mark" aria-hidden="true">M16</span>
+        <!-- Place your app icon at ../images/math16-icon.png. If the image is unavailable, the M16 symbol is displayed instead. -->
+        <img class="app-icon" src="../images/math16-icon.png" alt="" width="64" height="64" onerror="this.hidden=true">
+      </div>
+      <div><div class="brand-name">Math16</div><div class="brand-note">The Number Puzzle</div></div>
+    </div>
+  </header>
+  <main class="wrap" id="start">
+    <p class="eyebrow">For iPad and Mac</p>
+    <h1>Combine numbers.<br>Discover connections.</h1>
+    <p class="intro">Math16 combines logical thinking with mathematical puzzles. Use the clues on the board to find the right numbers, one step at a time.</p>
+    <div class="actions">
+      <a class="button" href="#gameplay">Discover Math16</a>
+      <a href="support.html">Help &amp; Support</a>
+    </div>
+    <!-- Add the actual App Store link here once Math16 has been released. -->
+    <div class="card">
+      <section id="gameplay" aria-labelledby="idea">
+        <h2 id="idea">How the Game Works</h2>
+        <p>A 16 × 16 grid, numbers from 1 to 16, and mathematical clues: In Math16, you solve the puzzle by combining clues and drawing logical conclusions.</p>
+        <p>Differences, ratios, sums, and products reveal how the numbers are connected. Every relationship you work out brings you closer to the solution.</p>
+      </section>
+      <section aria-labelledby="steps">
+        <h2 id="steps">Solve It Step by Step</h2>
+        <ol>
+          <li><strong>Explore the clues:</strong> Examine the mathematical relationships between cells.</li>
+          <li><strong>Narrow down the possibilities:</strong> Use Notes mode to record possible numbers and combine the clues.</li>
+          <li><strong>Complete the board:</strong> Enter the correct numbers and solve the puzzle.</li>
+        </ol>
+        <div class="features" aria-label="Game features"><span>Notes Mode</span><span>Board Zoom</span><span>Mathematical Logic</span></div>
+      </section>
+      <section aria-labelledby="questions">
+        <h2 id="questions">Questions About Math16?</h2>
+        <p>Visit the <a href="support.html">Support page</a> for help and contact information. You can also email me directly at <a href="mailto:info.anklamm@web.de">info.anklamm@web.de</a>.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>Math16 · © 2026 Jost Anklamm</span>
+      <nav aria-label="More information">
+        <a href="index.html" aria-current="page">Math16</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="legal.html">Legal Notice</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

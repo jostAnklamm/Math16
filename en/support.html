@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Help and support for Math16: frequently asked questions, gameplay tips, and how to contact the developer.">
+<title>Support · Math16</title>
+<style>
+    :root { color-scheme: light; --green: #245b40; --ink: #20372b; --muted: #59685e; --line: #dce6de; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f8f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    .wrap { width: min(100% - 48px, 920px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .brand { display: flex; align-items: center; gap: 14px; padding-block: 25px; }
+    .icon-wrap { position: relative; flex: 0 0 64px; width: 64px; height: 64px; }
+    .mark { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; background: var(--green); color: white; font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+    .app-icon { position: absolute; inset: 0; width: 64px; height: 64px; object-fit: contain; border-radius: 14px; box-shadow: 0 4px 10px rgb(0 0 0 / 20%); }
+    .brand-name { font-size: 24px; font-weight: 700; letter-spacing: -.5px; }
+    .brand-note { color: var(--muted); font-size: 14px; }
+    main { padding-block: 54px 64px; }
+    .eyebrow { margin: 0 0 8px; color: var(--green); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { max-width: 720px; font-size: clamp(36px, 6vw, 48px); line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 20px; }
+    .intro { max-width: 650px; margin: 0 0 28px; color: var(--muted); font-size: 19px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 36px; }
+    .button { display: inline-block; padding: 10px 20px; background: var(--green); color: white; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #19482f; }
+    .card { max-width: 720px; padding: 36px 40px; background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 30px #20372b05; }
+    section + section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h2 { font-size: 19px; color: var(--green); line-height: 1.3; margin: 0 0 13px; }
+    p { margin: 0; }
+    p + p { margin-top: 12px; }
+    ol { margin: 0; padding-left: 24px; }
+    li + li { margin-top: 9px; }
+    .features { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .features span { background: #edf4ee; color: var(--green); padding: 5px 11px; border-radius: 7px; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    a { color: var(--green); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #bc9636; outline-offset: 5px; }
+    @media (max-width: 520px) { .wrap { width: calc(100% - 32px); } main { padding-block: 36px 44px; } .card { padding: 26px 22px; border-radius: 14px; } .intro { font-size: 17px; } }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { padding: 16px 0; cursor: pointer; font-weight: 600; line-height: 1.5; }
+    summary::marker { color: var(--green); }
+    summary:focus-visible { outline: 3px solid #bc9636; outline-offset: 3px; }
+    .answer { padding: 0 0 20px; color: var(--muted); }
+    ol, ul { padding-left: 24px; }
+    .signature { color: var(--muted); font-size: 14px; }
+    @media print { details > .answer { display: block; } }
+</style>
+</head>
+<body>
+<header>
+    <div class="wrap brand">
+      <div class="icon-wrap">
+        <span class="mark" aria-hidden="true">M16</span>
+        <!-- Place your app icon at ../images/math16-icon.png. If unavailable, the M16 symbol is shown instead. -->
+        <img class="app-icon" src="../images/math16-icon.png" alt="" width="64" height="64" onerror="this.hidden=true">
+      </div>
+      <div><div class="brand-name">Math16</div><div class="brand-note">The Number Puzzle</div></div>
+    </div>
+</header>
+<main class="wrap">
+<p class="eyebrow">Help &amp; Contact</p>
+<h1>Math16 Support</h1>
+<p class="intro">Have a question about the game or run into a technical issue? Find helpful information here or contact the developer directly.</p>
+<div class="actions"><a class="button" href="mailto:info.anklamm@web.de?subject=Math16%20Support">Email Support</a><a href="#help">Frequently Asked Questions</a></div>
+<div class="card">
+<section aria-labelledby="getting-started">
+<h2 id="getting-started">Getting Started</h2>
+<p>In Math16, you combine numbers from 1 to 16 using the mathematical clues on the board. Differences, ratios, sums, and products help you find the right numbers and rule out possibilities.</p>
+<ol>
+<li><strong>Select a cell:</strong> Choose the cell you want to work on and enter a number using the number pad.</li>
+<li><strong>Compare clues:</strong> Consider the mathematical relationships between neighboring cells and groups of cells.</li>
+<li><strong>Make notes:</strong> Use Notes Mode when more than one number is possible.</li>
+</ol>
+</section>
+<section id="help" aria-labelledby="questions">
+<h2 id="questions">Frequently Asked Questions</h2>
+<details><summary>What do the mathematical clues mean?</summary><div class="answer"><p>A difference describes the difference between two numbers, a ratio shows their relationship through division, and a product is the result of multiplying them. Sum clues apply to the group of cells marked by a bracket.</p><p>Pay attention to the indicated direction or order for differences and ratios. For example, a ratio of 3 is different from 1/3.</p></div></details>
+<details><summary>What is Notes Mode for?</summary><div class="answer"><p>Notes Mode lets you record possible numbers in a cell. This helps you keep track of several possibilities before committing to a number. Turn Notes Mode off when you want to enter a final value.</p></div></details>
+<details><summary>What can I do if I get stuck?</summary><div class="answer"><p>Look for cells with only a few possible values. Compare multiple clues involving the same cell, and check the numbers you have already entered. Notes can help you narrow down the possibilities systematically.</p></div></details>
+<details><summary>Can I zoom in on the board?</summary><div class="answer"><p>Math16 lets you zoom in on the game board. Use the zoom controls available in your version of the app to make numbers and clues easier to read.</p></div></details>
+<details><summary>Where is my game data stored?</summary><div class="answer"><p>Saved games, settings, and game statistics are stored locally on your device. Math16 currently does not offer its own iCloud synchronization. For more information, see the <a href="privacy.html">Privacy Policy</a>.</p></div></details>
+<details><summary>What should I do if I encounter a technical issue?</summary><div class="answer"><p>Close Math16 and open the app again. Check whether a newer version is available. If the issue persists, send me an email describing what happens and how to reproduce the problem.</p><p>Please do not uninstall the app as a first troubleshooting step, as this may cause locally saved games to be lost.</p></div></details>
+</section>
+<section aria-labelledby="report-issue">
+<h2 id="report-issue">Report a Bug</h2>
+<p>The following information will help me understand and investigate the issue:</p>
+<ul>
+<li>Your device, such as an iPad or Mac, preferably including the model</li>
+<li>Your iPadOS or macOS version</li>
+<li>Your Math16 app version</li>
+<li>The steps that lead to the issue</li>
+<li>What you expected to happen and what happened instead</li>
+<li>If helpful, a screenshot of the game board or error message</li>
+</ul>
+<p>Before sending screenshots, please check them and remove any personal information that is not needed to describe the issue.</p>
+<p><a class="button" href="mailto:info.anklamm@web.de?subject=Math16%20Bug%20Report">Report a Bug by Email</a></p>
+</section>
+<section aria-labelledby="contact">
+<h2 id="contact">Questions, Ideas, or Suggestions?</h2>
+<p>Feedback on the controls and suggestions for Math16 are welcome, too. Email me at <a href="mailto:info.anklamm@web.de?subject=Math16%20Feedback">info.anklamm@web.de</a>.</p>
+<p>Your message will be used to respond to your inquiry. For more information, see the section on email contact in the <a href="privacy.html">Privacy Policy</a>.</p>
+<p class="signature">Jost Anklamm · Developer of Math16</p>
+</section>
+</div>
+</main>
+<footer>
+    <div class="wrap">
+      <span>Math16 · © 2026 Jost Anklamm</span>
+      <nav aria-label="More Information">
+        <a href="index.html">Math16</a> ·
+        <a href="support.html" aria-current="page">Support</a> ·
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="legal.html">Legal Notice</a>
+      </nav>
+    </div>
+</footer>
+</body>
+</html>
